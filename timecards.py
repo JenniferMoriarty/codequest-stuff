@@ -28,14 +28,19 @@ for caseNum in range(cases):
         minutes-=60
         hours+=1
         
-    #print out the appropriate statement
-    if minutes >1:
-        print(hours, "hours", minutes, "minutes")
-    elif minutes == 1:
-        print(hours, "hours", minutes, "minute")
-    elif minutes == 0:
-        print(hours, "hours")
+    #print out the appropriate hours statement
+    if hours ==1:
+        print("1 hour", end = "")
+    elif hours >1:
+        print(hours, "hours", end = "")
+    else:
+        print("0 hours", end = "")
     
-    
+    if minutes ==1:
+        print(" 1 minute")
+    elif minutes >1:
+        print(" ", end = "")
+        print(minutes, "minutes")
+        
 
     
